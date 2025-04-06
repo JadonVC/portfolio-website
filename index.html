@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+        </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JadonVC Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css " />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"
+/></head>
+<body>
+    <header>
+        <nav>
+            <div class = "left">
+                <h1 id = "typewriter"><a href="#about">JadonVC Productions</a></h1>
+            </div>
+            <div class = "right">
+                <a href="#about-section">About</a>
+                <a href="#skills-section">Skills</a>
+                <a href="#projects-section">Projects</a>
+                <a href="#contact-section">Contact</a>
+            </div>
+        </nav>
+    </header>
+    <section id="about-section">
+        <h2>Jadon Chanthavong</h2>
+        <div class = "headshot">
+        <picture>
+            <img src="assets/headpic.jpg" alt="headshot">
+        </picture>
+    </div>
+    <div class="bio">
+        <p>
+            I'm a UNC Charlotte undergraduate student majoring in Computer Science (IT Concentration).
+            At the moment, I'm a junior dev interested in Software engineering with an eagerness to learn!
+        </p>
+        <br>
+        <p>
+            Besides my career and school activities, I have numerous interests including playing video games, going to the gym, 
+            photography, videography, and working on cars, trucks, and boats!
+        </p>
+    </div>
+    <div class="social-links">
+        <a href="https://www.instagram.com/JadonVC/" target="_blank" class = "instagram-icon">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://linkedin.com/in/jadonchanthavong/" target="_blank" class = "linkedin-icon">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/JadonVC/" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
+    </section>
+    <div class="divider"></div>
+    <section id = "skills-section">
+        <h2>Skills</h2>
+        <div class = "skills-container">
+            <i class="fa-brands fa-java"></i>
+            <i class="ri-html5-line"></i>
+            <i class="ri-css3-line"></i>
+            <i class="ri-javascript-line"></i>
+            <i class="ri-database-2-line"></i>
+            <i class="ri-tools-line"></i>
+        </div>
+        <div class = "btn-container">
+            <button
+                class = "btn btn-color-2"
+                onclick = "window.open('./assets/Jadon-Resume.pdf')">
+                Download Resume
+            </button>
+            <button 
+                class = "btn btn-color-1" 
+                onclick = "location.href = './#contact-section'">
+                Contact Info
+            </button>
+        </div>
+    </section>
+    <div class="divider"></div>
+    <section id = "projects-section">
+        <h2>Projects</h2>
+
+        <!-- Software Projects Subsection -->
+         <div class = "project-subsection">
+            <h3>Software Development</h3>
+
+         </div>
+
+         <!-- Mechanical & Electrical Projects Subsection-->
+          <div class = "project-subsection">
+            <h3>Mechanical & Electrical Experience</h3>
+
+          </div>
+    </section>
+    <div class="divider"></div>
+    <section id = "contact-section">
+        <h1>Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <address>
+                Email: <a href="mailto:jadonvc@gmail.com?subject=Contact%20from%20Portfolio&body=Hi%20Jadon,%0A%0AMy%20name%20is%20[Your%20Name]%20and%20I%20wanted%20to%20reach%20out%20about%20[Your%20Inquiry]." target="_blank">jadonvc@gmail.com</a>
+            </address>
+            </div>
+          </div>
+    </section>
+    <footer>
+        <p>&copy; <span id="dynamic-year"></span> Jadon Chanthavong. All Rights Reserved.</p>
+    </footer>
+    <script src="dynamic.js"></script>
+</body>
+</html>
