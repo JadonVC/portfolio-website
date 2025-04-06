@@ -1,0 +1,394 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #ffffff;
+    --background-color: #eeeff1;
+    font-size: 17px; /* Set the base font size */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+
+body {
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a{
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+nav {
+    background-color: rgba(162, 206, 189, 0.9);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3.125rem;
+    height: 5rem;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0 0.625rem;
+}
+
+nav .right a:hover {
+    color: var(--link-color);
+    transition: color 0.25s ease-in-out;
+}
+
+/* General Section Styles */
+section {
+    padding: 8rem 2rem;
+    min-height: 80vh; /* Reduce the default minimum height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+section:nth-of-type(odd) {
+    background-color: #f8f8f8; /* Light gray for odd sections */
+}
+
+section:nth-of-type(even) {
+    background-color: #ffffff; /* White for even sections */
+}
+
+/* Section Heading Styles */
+section h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* About Section */
+#about-section {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8rem 2rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+#about-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#about-section .headshot {
+    width: 20rem;
+    height: 20rem;
+    overflow: hidden;
+    margin-top: 1rem;
+    margin-bottom: 37px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#about-section .headshot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+#about-section .headshot img:hover {
+    transform: scale(1.2);
+}
+
+#about-section .bio {
+    margin-bottom: 2rem;
+    padding: 0 2rem;
+    max-width: 56.25rem;
+}
+
+#about-section .bio p {
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#about-section .social-links {
+    font-size: 2.25rem;
+}
+
+#about-section .social-links a {
+    padding: 0;
+    margin: 0 0.75rem;
+}
+
+#about-section .social-links a i {
+    transition: transform 0.3s, color 0.3s;
+    font-size: 2.5rem;
+}
+
+#about-section .social-links i {
+    font-weight: 500;
+}
+
+#about-section .social-links a:hover i {
+    transform: scale(1.3);
+} 
+
+.instagram-icon i {
+    color: #ee2a7b;
+}
+
+.instagram-icon i:hover {
+    color: #eb71a4;
+}
+
+.linkedin-icon i {
+    color: #0072b1; /* LinkedIn blue */
+}
+
+.linkedin-icon i:hover {
+    color: #88a2f0;
+}
+
+/* Skills Section */
+#skills-section {
+    padding-top: 4rem;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem; /* Add gap between elements */
+}
+
+#skills-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+
+#skills-section .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem; /* Add gap between icons */
+}
+
+#skills-section i {
+    font-size: 3rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 1rem 0; /* Add margin to ensure proper spacing */
+}
+
+#skills-section i:hover {
+    transform: scale(1.3);
+}
+
+.skills-container i:nth-child(1) {
+    color: #e76f00; /* Java */
+}
+
+#skills-section i:nth-child(1):hover {
+    color: #f3ad82;
+}
+
+.skills-container i:nth-child(2) {
+    color: #f06529; /* HTML5 */
+}
+
+#skills-section i:nth-child(2):hover {
+    color: #f5975d;
+}
+
+.skills-container i:nth-child(3) {
+    color: #2965f1; /* CSS3 */
+}
+
+#skills-section i:nth-child(3):hover {
+    color: #7b9ff1;
+}
+
+.skills-container i:nth-child(4) {
+    color: #f0db4f; /* Javascript */
+}
+
+#skills-section i:nth-child(4):hover {
+    color: #fdf0a8;
+}
+
+.skills-container i:nth-child(5) {
+    color: #3290e3; /* Database */
+}
+
+#skills-section i:nth-child(5):hover {
+    color: #84c4fc;
+}
+
+.skills-container i:nth-child(6) {
+    color: #98a6b3; /* Mechanic */
+}
+
+#skills-section i:nth-child(6):hover {
+    color: #d6dce2;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: rgb(0, 0, 0);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* Projects Section */
+#projects-section {
+    padding-top: 4rem;
+    width: 100%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+#projects-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+#projects-section h3 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.project-subsection {
+    width: 100%;
+    margin-bottom: 4rem; /* Add space between subsections */
+}
+
+/* Leave a Message Section */
+#contact-section {
+    min-height: 20vh; 
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact-section h2 {
+    margin-bottom: 1rem;
+    font-size: 2.75rem;
+    font-weight: 800;
+}
+
+footer {
+    background-color: rgb(46, 46, 46);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.875rem;
+}
+
+/* Typewriter Animation */
+#typewriter {
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    color: #1a1c20;
+    overflow: hidden; /* Ensures content is hidden during the typing effect */
+    white-space: nowrap;
+    border-right: 0.1em solid #1a1c20; /* Creates the "cursor" effect */
+    width: 0; /* Start with 0 width */
+    animation: typing 4s steps(20) 1s forwards, blink 0.75s step-end infinite;
+  }
+  
+  /* Keyframe for typing animation */
+  @keyframes typing {
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Keyframe for blinking animation */
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
