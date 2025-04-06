@@ -30,6 +30,13 @@
         <h2>Jadon Chanthavong</h2>
         <div class = "headshot">
         <picture>
+            <!-- WebP format (used if supported) -->
+            <source srcset="assets/headpic.webp" type="image/webp">
+    
+            <!-- PNG format (used if WebP is not supported but PNG is) -->
+            <source srcset="assets/headpic.png" type="image/png">
+    
+            <!-- Fallback to JPG format (used if neither WebP nor PNG are supported) -->
             <img src="assets/headpic.jpg" alt="headshot">
         </picture>
     </div>
