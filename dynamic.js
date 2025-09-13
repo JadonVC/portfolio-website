@@ -12,7 +12,11 @@ document.addEventListener("DOMContentLoaded", function() {
       // Stop the blinking by removing it from the animation
       typewriterElement.style.animation = "typing 4s steps(20) 1s forwards"; // Only typing animation now
       
+<<<<<<< HEAD
       // Remove the cursor (border-right) after typing is complete
+=======
+      // Optionally, you can also remove the cursor (border-right) after typing is complete
+>>>>>>> 4b80730fb438684ba800dfd04dc72fe7f1bffec5
       typewriterElement.style.borderRight = "none";
     }, 4000); // Stop blinking after 4 seconds (when typing ends)
   });
